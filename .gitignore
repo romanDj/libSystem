@@ -148,4 +148,4 @@ runtime/
 
 # Generated index.php
 modules/foo/views/default/index.php
-views/site/index.php
+#views/site/index.php
