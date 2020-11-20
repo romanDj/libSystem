@@ -16,8 +16,10 @@ class m201118_104541_create_book_table extends Migration
             'id' => $this->primaryKey(),
             'title' => $this->string(250),
             'description' => $this->text(),
-            'created_at' => $this->dateTime()->notNull()->defaultExpression('NOW()'),
-            'updated_at' => $this->dateTime()->defaultExpression('NOW()')->append('ON UPDATE NOW()'),
+            'created_at' => $this->dateTime(),
+            //'created_at' => $this->dateTime()->notNull()->defaultExpression('NOW()'),
+            'updated_at' => $this->dateTime(),
+            //'updated_at' => $this->dateTime()->defaultExpression('NOW()')->append('ON UPDATE NOW()'),
             'author_id' => $this->integer()->null()
         ]);
 

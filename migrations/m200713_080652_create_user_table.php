@@ -18,8 +18,10 @@ class m200713_080652_create_user_table extends Migration
             'login' => $this->string(40)->notNull()->unique(),
             'password' => $this->string(40)->notNull(),
             'access_token' => $this->string(60),
-            'created_at' => $this->dateTime()->notNull()->defaultExpression('NOW()'),
-            'updated_at' => $this->dateTime()->defaultExpression('NOW()')->append('ON UPDATE NOW()')
+            'created_at' => $this->dateTime(),
+            //'created_at' => $this->dateTime()->notNull()->defaultExpression('NOW()'),
+            'updated_at' => $this->dateTime()
+            //'updated_at' => $this->dateTime()->defaultExpression('NOW()')->append('ON UPDATE NOW()')
         ]);
     }
 
