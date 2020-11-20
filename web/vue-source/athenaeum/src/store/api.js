@@ -1,4 +1,4 @@
-let API_ROOT = "http://libsystem/v1";
+let API_ROOT = window.location.protocol+"//"+window.location.hostname+"/v1";
 
 /** Some helpers **/
 
